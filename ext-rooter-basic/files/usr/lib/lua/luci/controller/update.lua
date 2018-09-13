@@ -3,7 +3,7 @@ module("luci.controller.update", package.seeall)
 function index()
 	local page
 
-	page = entry({"admin", "status", "update"}, template("rooter/update"), _("ROOter Firmware Update"))
+	page = entry({"admin", "status", "update"}, template("rooter/update"), _("PBerduka Update"))
 	page = entry({"admin", "status", "get_ver"}, call("action_get_ver"))
 	page = entry({"admin", "status", "get_change"}, call("action_get_change"))
 	page.dependent = true
